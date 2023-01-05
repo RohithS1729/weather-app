@@ -9,13 +9,8 @@ import starOn from '../images/starOn.png'
 const Home=({changeCity,cityList,setcityList})=>{
     const [toggleModal,setToggleModal]=useState(false)
     const [change,setchange]=useState(true)
-    // console.log(cityList)
     const page='Home'
-    console.log()
-    // {
 
-
-    // }
     
     return(
         <div className="homePage">
