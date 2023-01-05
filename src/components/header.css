@@ -1,0 +1,25 @@
+.heading{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 16px;
+
+
+}
+.heading>div{
+    display: flex;
+    align-items: center;
+}
+.heading>div>span{
+    font-weight: 700;
+    font-size: larger;
+}
+#homeNewCityBtn{
+    border: none;
+    padding: 12px 28px;
+    background-color:#633ea5 ;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.nav-container {
+    height: 100vh;
+    margin-right: 16px;
+    background-color: #633ea5;
+    width: 100px;
+    color: white;
+    
+    
+}
+/* .nav-container div{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 160);
+    
+    
+} */
+.selectPage{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.active{
+    background-color:#ffce5e;
+    /* background-color: ; */
+}
+.selectPage:active{
+    text-decoration: none;
+    color: #633ea5;
+}
+.linkNav{
+    text-decoration: none;
+   
+}

@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+}
+.citiesPage{
+    width: 100%;
+    display: flex;
+}
+.citiesMain{
+    display: flex;
+    width: 100%;
+    
+}
+.left{
+    width: 40%;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    margin: 28px;
+    margin-right: 16px;
+    
+}
+.right{
+    width: 60%;
+    border: 1px solid #e5e5e5;
+    margin: 28px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+
+}
+.headingText{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    
+}
+.left-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;;
+    margin-bottom: 8px;
+    
+
+}
+.left-heading svg{
+    cursor: pointer;
+}
+.cityList span{
+    text-align: center;
+    display: flex;
+    margin-top: 5px;
+    
+    font-size: large;
+    justify-content: center;
+}
+.cityList div{
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+
+
+}
+.cityList div:last-child{
+    border-bottom: 1px solid #e5e5e5;
+}
+.class1{
+    background-color: white;
+}
+.class2{
+    background-color: #e5e5e5
+}
+.class2:hover{
+    cursor: pointer;
+    
+    background-color: #e5e5e5;
+}
+.class1:hover{
+    background-color: #e5e5e5;
+}
+.cityList div:hover{
+}
+/* .test11{
+    background-color: pink;
+} */
+.right{
+
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.details-item{
+
+    padding: 28px;
+    text-align: center;
+}
+.details-item div:first-child{
+    color: green;
+}
+.details-item div{
+    margin-bottom: 6px;
+}
+.details-item div span{
+    font-weight: 700;
+}
