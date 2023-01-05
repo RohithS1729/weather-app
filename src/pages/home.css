@@ -13,6 +13,8 @@ body{
 .container-fav{
     /* background-color: red; */
     display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
 }
 .item-fav{
     /* background-color: yellow; */
@@ -44,4 +46,11 @@ body{
     cursor: pointer;
     height: 30px;
     width: 30px;
+}
+
+@media screen and (min-width: 770px) {
+    .homePage{
+        position: absolute;
+    }
+
 }

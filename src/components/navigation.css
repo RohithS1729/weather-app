@@ -7,15 +7,6 @@
     
     
 }
-/* .nav-container div{
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(231, 231, 160);
-    
-    
-} */
 .selectPage{
     height: 75px;
     display: flex;
@@ -35,4 +26,20 @@
 .linkNav{
     text-decoration: none;
    
+}
+@media screen and (max-width: 770px) {
+    .nav-container{
+        position: absolute;
+        height: 8vh;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
+    .nav-container div{
+        /* margin-right: 16px; */
+        width: 100px;
+    }
+
+
 }

@@ -7,10 +7,26 @@ body{
 }
 .citiesMain{
     display: flex;
+    /* align-items: center; */
     width: 100%;
+
+    
     
 }
+.citiesMain >div{
+    height: 70%;
+}
+.cityList{
+    overflow: scroll;
+    height: 90%;
+
+}
+.cityList::-webkit-scrollbar{
+    display: none;
+}
 .left{
+    /* overflow: scroll; */
+    /* height: 100%; */
     width: 40%;
     border: 1px solid #e5e5e5;
     box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
@@ -25,11 +41,15 @@ body{
     box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
 
 }
+
 .headingText{
 
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e5e5;
     
     
 }
@@ -39,12 +59,14 @@ body{
     padding: 10px;
     border-bottom: 1px solid #e5e5e5;;
     margin-bottom: 8px;
+    font-weight: 700;
     
 
 }
 .left-heading svg{
     cursor: pointer;
 }
+
 .cityList span{
     text-align: center;
     display: flex;
@@ -69,18 +91,17 @@ body{
     background-color: #e5e5e5
 }
 .class2:hover{
-    cursor: pointer;
     
+    cursor: pointer;
     background-color: #e5e5e5;
 }
 .class1:hover{
     background-color: #e5e5e5;
+    cursor: pointer;
 }
 .cityList div:hover{
 }
-/* .test11{
-    background-color: pink;
-} */
+
 .right{
 
     display: flex;
@@ -106,4 +127,14 @@ body{
 }
 .details-item div span{
     font-weight: 700;
+}
+@media screen and (max-width: 770px) {
+    .citiesMain{
+        display: flex;
+        width: 100%;
+        /* background-color: red; */
+        height: 92vh;
+        
+    }
+
 }

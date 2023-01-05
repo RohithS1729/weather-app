@@ -7,13 +7,13 @@ import starOff from '../images/starOff.png'
 
 const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
     const [toggleModal,setToggleModal]=useState(false)
-    const [selectedId,setselectedId]=useState()
+
     // console.log(cityDisplay)
     const page='Cities'
     return(
         <div className="citiesPage">
             
-            <Navigation pages={page}/>
+            <Navigation  pages={page}/>
             {toggleModal?
                 <Modal  addCity={changeCity} toggleModals={setToggleModal}/>:
                 null}
@@ -32,10 +32,10 @@ const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
                 {
                     listCity.length>0?listCity.map(val=>{
                         return(
-                            <div className={val.id===selectedId?'class2':'class1'} 
+                            <div className={val.id===cityDisplay.id?'class2':'class1'} 
                               onClick={()=>{
                                 setcityDisplay(val)
-                                setselectedId(val.id)
+                                
                             }}
                              key={val.id}>
 

@@ -1,5 +1,7 @@
 import './App.css';
 import Home from './pages/home'
+import {Helmet} from "react-helmet";
+
 import Cities from './pages/cities';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import React, { createContext, useEffect, useState } from 'react';
@@ -23,14 +25,19 @@ function App() {
 
   return (
     <BrowserRouter>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title> Weather Application </title>
 
+
+        </Helmet>
         <context.Provider value={{actualData:mainData,changeData:setmainData}}>
-      <Routes>
-          <Route path='/' element={<Home cityList={cityData} setcityList={setcitiesData} changeCity={setcitiesData} />}></Route>
+          <Routes>
+              <Route path='/' element={<Home cityList={cityData} setcityList={setcitiesData} changeCity={setcitiesData} />}></Route>
 
 
-          <Route path='/cities' element={<Cities setlistCity={setcitiesData} listCity={cityData} changeCity={setcitiesData} cityDisplay={selectedCity} setcityDisplay={setselectedCity}  />}></Route>
-      </Routes>
+              <Route path='/cities' element={<Cities setlistCity={setcitiesData} listCity={cityData} changeCity={setcitiesData} cityDisplay={selectedCity} setcityDisplay={setselectedCity}  />}></Route>
+          </Routes>
         </context.Provider>
 
     </BrowserRouter>
