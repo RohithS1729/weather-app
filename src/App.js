@@ -17,7 +17,7 @@ function App() {
   // list
   const [cityData,setcitiesData]=useState([])
   //preserve select
-  const [selectedCity,setselectedCity]=useState({})
+  const [selectedCity,setselectedCity]=useState()
 
   useEffect(()=>{
     setmainData([...CitiesData])

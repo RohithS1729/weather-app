@@ -7,7 +7,12 @@ import starOff from '../images/starOff.png'
 
 const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
     const [toggleModal,setToggleModal]=useState(false)
-
+    let highlight='-1'
+    if(cityDisplay){
+        highlight=cityDisplay.id
+        // console.log(cityDisplay.id)
+    }
+    // let highlight=cityDisplay.id
     // console.log(cityDisplay)
     const page='Cities'
     return(
@@ -32,7 +37,8 @@ const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
                 {
                     listCity.length>0?listCity.map(val=>{
                         return(
-                            <div className={val.id===cityDisplay.id?'class2':'class1'} 
+                            <div
+                             className={val.id===highlight?'class2':'class1'} 
                               onClick={()=>{
                                 setcityDisplay(val)
                                 
