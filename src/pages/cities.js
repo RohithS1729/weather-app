@@ -111,10 +111,5 @@ Cities.prototype={
     changeCity:PropTypes.func,
     setlistCity:PropTypes.func,
     cityDisplay:PropTypes.object,
-    
-    setcityDisplay:PropTypes.func,
-    
-    
-    
-
+    setcityDisplay:PropTypes.func
 }

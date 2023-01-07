@@ -24,5 +24,5 @@ export default Header
 
 Header.prototype={
 
-    toggle:ProptTypes.bool
+    toggle:ProptTypes.func
 }
