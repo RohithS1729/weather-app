@@ -1,25 +1,19 @@
 body{
-    margin: 0px;
+    margin: 0;
 }
 .homePage{
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
     background-color: white;
 }
 .main{
     width: 100%;
 }
 .container-fav{
-    /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
-    /* overflow: scroll; */
 }
 .item-fav{
-    /* background-color: yellow; */
-    /* margin: 0 8px 8px 0; */
-    /* padding: 28px; */
     margin-top: 10px;
     margin-left: 10px;
     width: 250px;

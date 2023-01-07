@@ -34,7 +34,7 @@ const Home=({changeCity,cityList})=>{
                                                     <div onClick={()=>{
                                                         cityList.forEach(val1=>{
                                                             if(val1.id===val.id){
-                                                                return val1.favFlag=!val1.favFlag
+                                                                val1.favFlag=!val1.favFlag
 
                                                             }
                                                         });

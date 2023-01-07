@@ -7,10 +7,7 @@ body{
 }
 .citiesMain{
     display: flex;
-    /* align-items: center; */
-    width: 100%;
-
-    
+    width: 100%; 
     
 }
 .citiesMain >div{
@@ -25,8 +22,6 @@ body{
     display: none;
 }
 .left{
-    /* overflow: scroll; */
-    /* height: 100%; */
     width: 40%;
     border: 1px solid #e5e5e5;
     box-shadow: 0 0 4px rgb(0 0 0 / 25%);
@@ -35,6 +30,8 @@ body{
     
 }
 .right{
+    display: flex;
+    flex-direction: column;
     width: 60%;
     border: 1px solid #e5e5e5;
     margin: 28px;
@@ -99,14 +96,9 @@ body{
     background-color: #e5e5e5;
     cursor: pointer;
 }
-.cityList div:hover{
-}
 
-.right{
 
-    display: flex;
-    flex-direction: column;
-}
+
 .details{
     
     display: flex;
@@ -132,7 +124,7 @@ body{
     .citiesMain{
         display: flex;
         width: 100%;
-        /* background-color: red; */
+
         height: 92vh;
         
     }

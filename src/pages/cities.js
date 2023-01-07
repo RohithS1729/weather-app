@@ -70,7 +70,7 @@ const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
 
                             listCity.forEach(val=>{
                                 if(val.id===cityDisplay.id)
-                                return val.favFlag=!val.favFlag
+                                val.favFlag=!val.favFlag
                             });
                             setlistCity([...listCity])
 
@@ -111,6 +111,10 @@ Cities.prototype={
     changeCity:PropTypes.func,
     setlistCity:PropTypes.func,
     cityDisplay:PropTypes.object,
-    setcityDisplay:PropTypes.func
+    
+    setcityDisplay:PropTypes.func,
+    
+    
+    
 
 }

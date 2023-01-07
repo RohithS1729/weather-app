@@ -1,9 +1,9 @@
-import React, { useRef,useState } from "react";
+import React from 'react'
 import {Link} from 'react-router-dom'
 import style from './navigation.css'
+import ProptTypes from 'prop-types'
 
 const Navigation=({pages})=>{
-    // console.log(pages)
     return(
         
         <div>
@@ -31,3 +31,7 @@ const Navigation=({pages})=>{
     )
 }
 export default Navigation
+
+Navigation.prototype={
+    pages:ProptTypes.string
+}

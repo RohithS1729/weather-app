@@ -1,5 +1,7 @@
 import React from "react";
 import style from './header.css'
+import ProptTypes from 'prop-types'
+
 const Header=({toggle})=>{
     const newCity=()=>{
         toggle(state=>!state)
@@ -18,3 +20,9 @@ const Header=({toggle})=>{
     )
 }
 export default Header
+
+
+Header.prototype={
+
+    toggle:ProptTypes.bool
+}

@@ -27,7 +27,7 @@ const Modal =({toggleModals,addCity})=>{
         const selectedArr=cityName.filter( val=>{return val.id==key})
         selectedArr.forEach(val=>{
             if(val.favFlag===undefined){
-                return val.favFlag=false
+                val.favFlag=false
             }
         })
         
