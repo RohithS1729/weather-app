@@ -4,9 +4,10 @@ import Navigation from "../components/navigation";
 import Header from "../components/header";
 import Modal from "../components/modal";
 import starOn from '../images/starOn.png'
+import PropTypes from 'prop-types'
 
 
-const Home=({changeCity,cityList,setcityList})=>{
+const Home=({changeCity,cityList})=>{
     const [toggleModal,setToggleModal]=useState(false)
     const [change,setchange]=useState(true)
     const page='Home'
@@ -27,7 +28,7 @@ const Home=({changeCity,cityList,setcityList})=>{
                         cityList.map(val=>{return val.favFlag}).includes(true)>0?
                                 cityList.filter(val=>val.favFlag).map(val=>{
 
-                                    return <div className="item-fav">
+                                    return <div key={val.id} className="item-fav">
                                                 <div>
                                                     <div>{val.name}</div>
                                                     <div onClick={()=>{
@@ -64,3 +65,8 @@ const Home=({changeCity,cityList,setcityList})=>{
     )
 }
 export default Home
+
+Home.propTypes={
+    changeCity: PropTypes.func,
+    cityList: PropTypes.array
+}

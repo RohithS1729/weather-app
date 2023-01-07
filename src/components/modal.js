@@ -1,5 +1,6 @@
 import React, {  useContext, useEffect, useState } from "react";
 import style from './modal.css'
+import PropTypes from 'prop-types'
 
 import {context} from '../App'
 
@@ -16,7 +17,7 @@ const Modal =({toggleModals,addCity})=>{
         if(str.length>0){
             let newArr=cityName.filter(val=>{
                 return val.name.toLowerCase().indexOf(str)>-1})
-            console.log(newArr)
+            // console.log(newArr)
             setsearchArr([...newArr])
         }else{
             setsearchArr([...cityName])
@@ -49,7 +50,9 @@ const Modal =({toggleModals,addCity})=>{
 
                         <svg cursor={'pointer'} onClick={()=>{
                             toggleModals(state=>!state)
-                        }} width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 1L1 16" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 1L16 16" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        }} width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 1L1 16" stroke="#333333" strokeWidth={"2"} strokeMiterlimit={"10"} strokeLinecap={"round"} strokeLinejoin={"round"}></path>
+                            <path d="M1 1L16 16" stroke="#333333" strokeWidth={"2"} strokeMiterlimit={"10"} strokeLinecap={"round"} strokeLinejoin={"round"}></path></svg>
                     </div>
                     <div className="serchBarModal">
                         <input placeholder="search city" id="inputValue" type={'text'} onChange={searchBarInput} />
@@ -79,3 +82,9 @@ const Modal =({toggleModals,addCity})=>{
     )
 }
 export default Modal
+
+Modal.propTypes={
+    toggleModals:PropTypes.func,
+    addCity:PropTypes.func
+
+}
