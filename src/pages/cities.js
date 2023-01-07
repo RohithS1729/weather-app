@@ -110,6 +110,12 @@ Cities.prototype={
     listCity:PropTypes.array,
     changeCity:PropTypes.func,
     setlistCity:PropTypes.func,
-    cityDisplay:PropTypes.object,
+    cityDisplay:PropTypes.shape({
+        id:PropTypes.string,
+        name:PropTypes.string,
+        desc:PropTypes.string,
+        temp:PropTypes.string,
+        humidity:PropTypes.string
+    }),
     setcityDisplay:PropTypes.func
 }
