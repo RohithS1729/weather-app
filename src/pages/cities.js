@@ -115,7 +115,8 @@ Cities.propTypes={
         name:PropTypes.string,
         desc:PropTypes.string,
         temp:PropTypes.string,
-        humidity:PropTypes.string
+        humidity:PropTypes.string,
+        favFlag:PropTypes.bool
     }),
     setcityDisplay:PropTypes.func
 }
