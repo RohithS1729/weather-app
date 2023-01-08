@@ -22,7 +22,7 @@ const Header=({toggle})=>{
 export default Header
 
 
-Header.prototype={
+Header.propTypes={
 
     toggle:ProptTypes.func
 }

@@ -32,6 +32,6 @@ const Navigation=({pages})=>{
 }
 export default Navigation
 
-Navigation.prototype={
+Navigation.propTypes={
     pages:ProptTypes.string
 }

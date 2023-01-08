@@ -106,7 +106,7 @@ const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
 }
 export default Cities
 
-Cities.prototype={
+Cities.propTypes={
     listCity:PropTypes.array,
     changeCity:PropTypes.func,
     setlistCity:PropTypes.func,
