@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import LeftCitiesComp from "../components/leftCitiesComp";
 import RightCitiesComp from "../components/rightCitiesComp";
 
+import ContextApi from "../components/ContextApi";
 
 
 
@@ -21,9 +22,13 @@ const Cities=({listCity,changeCity,setlistCity,cityDisplay,setcityDisplay})=>{
         <div className="citiesPage">
             
             <Navigation  pages={page}/>
-            {toggleModal?
-                <Modal  addCity={changeCity} toggleModals={setToggleModal}/>:
-                null}
+            <ContextApi>
+
+                {toggleModal?
+                    <Modal  addCity={changeCity} toggleModals={setToggleModal}/>:
+                    null}
+
+            </ContextApi>
             <main className="citiesMain">
                     <LeftCitiesComp listCity={listCity} setToggleModal={setToggleModal} setcityDisplay={setcityDisplay} highlight={highlight}/>
 

@@ -5,7 +5,7 @@ import Header from "../components/header";
 import Modal from "../components/modal";
 // import starOn from '../images/starOn.png'
 import PropTypes from 'prop-types'
-
+import ContextApi from "../components/ContextApi";
 import FavouriteComp from "../components/favourite";
 
 
@@ -20,9 +20,14 @@ const Home=({changeCity,cityList})=>{
             <Navigation pages={page} />
             <div className="main">
                 <Header toggle={setToggleModal}/>
-                {toggleModal?
-                <Modal addCity={changeCity} toggleModals={setToggleModal}/>:
-                null}
+                <ContextApi>
+                    {/* <ModalNew toggleModal={toggleModal} changeCity={changeCity} setToggleModal={setToggleModal}/> */}
+                {/* toggleModal,changeCity,setToggleModal */}
+                    {toggleModal?
+                    <Modal addCity={changeCity} toggleModals={setToggleModal}/>:
+                    null}
+                    
+                </ContextApi>
                 <div className="container-fav">
                     <FavouriteComp cityList={cityList} setchange={setchange}/>
                 </div>

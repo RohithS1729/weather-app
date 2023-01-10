@@ -18,14 +18,14 @@ const Router=()=>{
     return(
         <BrowserRouter>
 
-        <context.Provider value={{actualData:mainData,changeData:setmainData}}>
+        {/* <context.Provider value={{actualData:mainData,changeData:setmainData}}> */}
           <Routes>
               <Route path='/' element={<Home cityList={cityData} setcityList={setcitiesData} changeCity={setcitiesData} />}></Route>
 
 
               <Route path='/cities' element={<Cities setlistCity={setcitiesData} listCity={cityData} changeCity={setcitiesData} cityDisplay={selectedCity} setcityDisplay={setselectedCity}  />}></Route>
           </Routes>
-        </context.Provider>
+        {/* </context.Provider> */}
 
     </BrowserRouter>
     )

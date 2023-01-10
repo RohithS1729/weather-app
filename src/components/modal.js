@@ -7,12 +7,18 @@ import CompModalCities from "./CompModalCities";
 import CompModalSearch from "./CompModalSearch";
 import CompModalClose from "./CompModalClose";
 
+import {MainCityData} from "./ContextApi";
+
 const Modal =({toggleModals,addCity})=>{
     const [serachArr,setsearchArr]=useState([])   
-    const city1=useContext(context)
+    const city1=useContext(MainCityData)
+    const cityName=city1.mainData
 
-    const cityName=city1.actualData
-    const changeCity=city1.changeData
+    const changeCity=city1.setmainData
+
+
+    // const data=useContext(MainCityData)
+   
 
     useEffect(()=>{
         

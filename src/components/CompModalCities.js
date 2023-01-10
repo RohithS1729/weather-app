@@ -8,7 +8,6 @@ const CompModalCities = ({cityName,changeCity,addCity,serachArr}) => {
                 val.favFlag=false
             }
         })
-        
         changeCity([...cityName.filter( val=>{return val.id!==key})])
         addCity(state=>[...state,...selectedArr])
        
